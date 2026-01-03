@@ -1,13 +1,14 @@
 <div align="center">
-  <img src="./logo.png" width="100%" />
+  <img src="./logo.png" width="23%" />
 </div>
 
 # Namaskar 🙏
+>[!NOTE]
+> Simple Neofetch Alternative
 
 <div align="center">
   <img src="./screenshot.png" width="100%" />
 </div>
-> Simple Neofetch Alternative
 
 ### Pre-requisites
 - Make, Bash and Git should be installed
