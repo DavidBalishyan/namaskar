@@ -1,28 +1,28 @@
 <div align="center">
-  <img src="/img.png" width="100%" />
+  <img src="./logo.png" width="100%" />
 </div>
 
 # Namaskar 🙏
 
+<div align="center">
+  <img src="./screenshot.png" width="100%" />
+</div>
 > Simple Neofetch Alternative
 
-![](/ss.png)
-
-### Pre-requisite
-- wget should be installed
+### Pre-requisites
+- Make, Bash and Git should be installed
 
 ### Installation
 ```sh
-sudo wget https://raw.githubusercontent.com/Piyush-linux/namaskar/master/namaskar.sh -P /usr/local/bin 
-```
-```sh
-sudo chmod +x /usr/local/bin/namaskar.sh
-```
-```sh
-namaskar.sh
+sudo make install
 ```
 
-### Dev 
+### Uninstallation
 ```sh
-shc -f namaskar.sh -o namaskar
+sudo make uninstall
+```
+
+### Usage
+```sh
+namaskar
 ```
