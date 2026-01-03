@@ -4,7 +4,7 @@
 
 # Namaskar 🙏
 >[!NOTE]
-> Simple Neofetch Alternative
+>A minimal alternative to neofetch 
 
 <div align="center">
   <img src="./screenshot.png" width="100%" />
