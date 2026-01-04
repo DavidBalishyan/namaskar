@@ -12,6 +12,7 @@
 
 ### Pre-requisites
 - Make, Bash and Git should be installed
+- A <a href="https://www.nerdfonts.com/">NerdFont</a>
 
 ### Installation
 ```sh
