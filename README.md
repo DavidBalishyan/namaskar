@@ -40,7 +40,7 @@ Before installing, make sure you have:
 ### Step 1: Clone the repository
 
 ```sh
-git clone https://github.com/<your-username>/namaskar.git
+git clone https://github.com/DavidBalishyan/namaskar.git
 cd namaskar
 ```
 
