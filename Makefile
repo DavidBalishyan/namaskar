@@ -10,14 +10,15 @@ RED     = \033[1;31m
 YELLOW  = \033[1;33m
 CYAN    = \033[1;36m
 
-.PHONY: help install uninstall
+.PHONY: help install uninstall reinstall
 
 help:
 	@echo "$(BOLD)$(CYAN)Usage:$(RESET) make [target]"
 	@echo ""
 	@echo "$(BOLD)$(BLUE)Targets:$(RESET)"
 	@echo "  $(GREEN)install$(RESET)          Install the application (interactive)."
-	@echo "  $(RED)uninstall$(RESET)        Uninstall the application (auto-detect)."
+	@echo "  $(RED)uninstall$(RESET)          Uninstall the application (auto-detect)."
+	@echo "  $(BLUE)reinstall$(RESET)         Reinstall the application"
 	@echo ""
 	@echo "  $(BOLD)$(YELLOW)NOTE:$(RESET) $(BOLD)sudo$(RESET) is required for /usr/local/bin"
 	@echo ""
@@ -61,8 +62,8 @@ uninstall:
 		exit 1; \
 	fi; \
 	echo "$(YELLOW)→ Found namaskar at $$BIN$(RESET)"; \
-	rm -f "$$BIN"; \
+	sudo rm -f "$$BIN"; \
 	echo "$(GREEN)✔ Uninstalled namaskar$(RESET)"
 
 
-
+reinstall: uninstall install
