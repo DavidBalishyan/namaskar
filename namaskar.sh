@@ -6,6 +6,7 @@ user=$(whoami)
 kernel="$(uname -r)"
 shell="$(basename "${SHELL}")"
 os="$(uname -s)"
+all="$(uname -a)"
 
 # Get uptime in a cross-platform way
 if [[ "$os" == "Darwin" ]]; then
@@ -123,6 +124,7 @@ ${c3} │ │ │ │ ${f3}${ic_user} user  ${rst} : ${user}
 ${c4} └─┼─┘ │ ${f4}${ic_kernel} kernel${rst} : ${kernel}
 ${c5}   └───┘ ${f5}${ic_shell} shell ${rst} : ${shell}
            ${f6}${ic_cpu} cpu   ${rst} : ${cpu}
+           ${f6}${ic_cpu} full  ${rst} : ${all}
            ${f7}${ic_gpu} gpu   ${rst} : ${gpu}
 
 ${ic_battery} ${battery}

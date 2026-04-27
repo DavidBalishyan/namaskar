@@ -10,7 +10,7 @@ RED     = \033[1;31m
 YELLOW  = \033[1;33m
 CYAN    = \033[1;36m
 
-.PHONY: help install uninstall reinstall
+.PHONY: help run install uninstall reinstall
 
 help:
 	@echo "$(BOLD)$(CYAN)Usage:$(RESET) make [target]"
@@ -19,10 +19,13 @@ help:
 	@echo "  $(GREEN)install$(RESET)          Install the application (interactive)."
 	@echo "  $(RED)uninstall$(RESET)          Uninstall the application (auto-detect)."
 	@echo "  $(BLUE)reinstall$(RESET)         Reinstall the application"
+	@echo "  $(CYAN)run$(RESET)         Run the application"
 	@echo ""
 	@echo "  $(BOLD)$(YELLOW)NOTE:$(RESET) $(BOLD)sudo$(RESET) is required for /usr/local/bin"
 	@echo ""
 
+run:
+	./namaskar.sh
 
 install:
 	@echo "$(BOLD)$(CYAN)Choose installation directory:$(RESET)"
